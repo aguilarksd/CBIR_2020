@@ -1,0 +1,16 @@
+close all
+clear all
+[filename1,pathname1]=uigetfile('*.*','Image');
+filewithpath1=strcat(pathname1,filename1);
+img=imread(filewithpath1);
+
+[img1]=Get_Sobel(img,0);
+%[img2]=Get_SobelFrac(img,0.5,0);
+
+[RGBv,RGBh,RGBg,V,H] = Get_MD_TOD(RGB);  
+
+figure(1)
+subplot(2,4,1); imshow(img); title('Image');
+subplot(2,4,2); imshow(img1); title('Sobel');
+subplot(2,4,3); imshow(RGBv); title('Sobel Vertical color');
+subplot(2,4,4); imshow(RGBh); title('Sobel Horizontal color');

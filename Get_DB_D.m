@@ -21,21 +21,6 @@ for i=1:T
         if strcmp(DesN,'CMSD')
             Des=GetCMSD(img,8,3,3,6,10);
         end
-        if strcmp(DesN,'PCMSED')
-            Des=GetPCMSED(img,8,3,3,6,10,Par);
-        end
-        if strcmp(DesN,'PCMSED1')
-            Des=GetPCMSED1(img,8,3,3,6,10,4);
-        end
-        if strcmp(DesN,'PCMSED2')
-            Des=GetPCMSED2(img,8,3,3,6,10,Par);
-        end
-        if strcmp(DesN,'PCMSEDp')
-            Des=GetPCMSEDp(img,8,3,3,6,10,4,Par);
-        end
-        if strcmp(DesN,'CMSED')
-            Des=GetCMSED(img,8,3,3,6,10,Par);
-        end
         if strcmp(DesN,'PCMSD')
             Des=GetPCMSD(img,8,3,3,6,10,4);
         end
